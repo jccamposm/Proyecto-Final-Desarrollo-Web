@@ -54,7 +54,7 @@
     <br/>
     <ul>
       <li>
-          <a href="educacion.html">Educación</a>
+          <a href="index.html">Inicio</a>
       </li>
       <li>
           <a href="">Experiencia</a>
@@ -62,36 +62,91 @@
     </ul>
     <hr/>
     <i style="font-family:verdana;">
-      Perfil Profesional
+      Educación
     </i>
     <br/>
-    <p style="font-family:verdana;">Ingeniero de Sistemas Especialista en Gerencia de Proyectos, <strong>Certificado PMP</strong> y Manejo de Ingles. Excelentes relaciones personales,
-      Gestión de Departamento de IT con mas de <strong>13 años</strong> de experiencia aplicada en diferentes industrias. Capacidad para asumir responsabilidades basadas en el conocimiento y experiencia
-      en el área informática.  Experiencia en Soluciones de Software y Desarrollo, Certificado MCAD. <strong>Experiencia en plataformas .Net (C#, Vb.Net, ASP.Net) Java, SAP R3, Hanna, BW.</strong>
-      Manejo de bases de datos relaciones (SQL SERVER, Oracle) y big data. Auditor Interno en ISO 9001, 14001, OSHAS 18001. Gestión y Administración de proyectos de Infraestructura. Administración integral de áreas de tecnología. Manejo de Talento Humano. Gestión de requerimientos aplicando metodologías BPM y SCRUM, experiencia comprobada en desarrollo de software en ambiente web (JavaScript, Bootstrap, PHP). Soy una persona Ingeniosa, creativa y emprendedora. Facilidad de comunicación y buenas relaciones.</p>
+    <table style="width=:100%;font-family:verdana;" border="3">
+      <thead>
+        <th>Año</th>
+        <th>Institución</th>
+        <th>Título</th>
+        <th>Terminó</th>
+      </thead>
+      <tr>
+        <td>2017</td>
+        <td>Project Management Institute</td>
+        <td>Project Management Professional</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2013</td>
+        <td>Universidad Sergio Arboleda</td>
+        <td>Diplomado en Logistica Lean Management</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2009</td>
+        <td>Universidad Piloto de Colombia</td>
+        <td>Especialista en Gerencia de Proyectos</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2006</td>
+        <td>Universidad Católica de Colombia</td>
+        <td>Ingeniero de Sistemas</td>
+        <td>Si</td>
+      </tr>
+    </table>
     <hr/>
-    <i style="font-family:verdana;">
-      Idiomas
-    </i>
-    <br/>
-    <ul>
-      <li>
-          Ingles
-            <ul>
-              <li>
-                Avanzado
-              </li>
-            </ul>
-      </li>
-      <li>
-          Fránces
-          <ul>
-            <li>
-              Principiante
-            </li>
-          </ul>
-      </li>
-    </ul>
+    <form name="frmEstudios" autocomplete="on">
+      <fieldset>
+        <legend style="font-family:verdana;">Agregar Estudios</legend>
+        <p style="font-family:verdana;">Adicionar más estudios</p>
+        <table style="font-family:verdana;">
+          <tr>
+            <td>
+                <label for="Año"><b>Año:</b></label>
+            </td>
+            <td>
+              <select>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <label for="Institución"><b>Institución:</b></label>
+            </td>
+            <td>
+                <input type="text" id="lblInstitucion" maxlength="200" size="100" >
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <label for="Título"><b>Título</b></label>
+            </td>
+            <td>
+                <input type="text" id="lblTitulo" maxlength="200" size="100" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <label for="Terminó"><b>Terminó:</b></label>
+            </td>
+            <td>
+              <input type="radio" name="rdoTermino" Value="Si" checked> Si
+              <input type="radio" name="rdoTermino" Value="No"> No
+            </td>
+          </tr>
+        </table>
+        <br/>
+        <br/>
+        <input type="submit" name="btnEnviar" value="Agregar" style="font-family:verdana;"/>
+      </fieldset>
+    </form>
   </body>
   <footer>
     <p style="text-align:right;font-family:verdana"><small><em>Desarrollado por:</em> Juan Carlos Campos Mosquera</small></p>
